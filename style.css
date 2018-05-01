@@ -1,0 +1,11 @@
+#mainBody {
+    background-color: #006666;
+}
+
+.container {
+    padding:50px;
+}
+
+.jumboTron {
+    border: solid 1px #ccc;
+}
