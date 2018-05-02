@@ -7,6 +7,7 @@ $(document).ready(function(){
                    'Access-Control-Allow-Origin': '*'  
             },
             beforeSend: function (xhr) {
+                console.log(btoa('3miCF6imUBMNpOyYq7zL/gc8aG+N' + ':' + 'freezeray'))
                 xhr.setRequestHeader ("Authorization", "Basic " + btoa('3miCF6imUBMNpOyYq7zL/gc8aG+N' + ':' + 'freezeray'));
             },
             success: function(resultData) { 
