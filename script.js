@@ -4,8 +4,7 @@ $(document).ready(function(){
             type: 'POST',
             url: "https://libcat.uncw.edu/iii/sierra-api/swagger/index.html/v5/token",
             headers: {
-                   'Access-Control-Allow-Origin': '*',
-                   'Access-Control-Request-Method': 'POST'            
+                   'Access-Control-Allow-Origin': '*'  
             },
             beforeSend: function (xhr) {
                 xhr.setRequestHeader ("Authorization", "Basic " + btoa('3miCF6imUBMNpOyYq7zL/gc8aG+N' + ':' + 'freezeray'));
