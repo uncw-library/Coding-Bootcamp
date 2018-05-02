@@ -5,7 +5,7 @@ $(document).ready(function(){
             data: {
                 'grant_type': 'client_credentials'
             },
-            url: "https://libcat.uncw.edu/iii/sierra-api/swagger/index.html/v3/token",
+            url: "https://libcat.uncw.edu/iii/sierra-api/swagger/index.html/v5/token",
             headers: {
                    'Access-Control-Allow-Origin': '*'  
             },
