@@ -8,7 +8,7 @@ $(document).ready(function(){
                    'Access-Control-Request-Method': 'POST'            
             },
             beforeSend: function (xhr) {
-                xhr.setRequestHeader ("Authorization", "Basic M21pQ0Y2aW1VQk1OcE95WXE3ekwvZ2M4YUcrTjpmcmVlemVyYXk=");
+                xhr.setRequestHeader ("Authorization", "Basic " + btoa('3miCF6imUBMNpOyYq7zL/gc8aG+N' + ':' + 'freezeray'));
             },
             success: function(resultData) { 
                 $('#titleSpan').html(resultData.title);
