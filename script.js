@@ -3,7 +3,7 @@ $(document).ready(function(){
         $.ajax({
             type: 'POST',
             url: "https://libcat.uncw.edu:443/iii/sierra-api/v5/token",
-            headers: {'Access-Control-Allow-Origin': '*'}
+            headers: {'Access-Control-Allow-Origin': '*'},
             beforeSend: function (xhr) {
                 xhr.setRequestHeader ("Authorization", "Basic M21pQ0Y2aW1VQk1OcE95WXE3ekwvZ2M4YUcrTjpmcmVlemVyYXk=");
             },
