@@ -6,7 +6,7 @@ $(document).ready(function(){
             headers: {
                    'Access-Control-Allow-Origin': '*',
                    'Access-Control-Request-Method': 'POST'            
-            }
+            },
             beforeSend: function (xhr) {
                 xhr.setRequestHeader ("Authorization", "Basic M21pQ0Y2aW1VQk1OcE95WXE3ekwvZ2M4YUcrTjpmcmVlemVyYXk=");
             },
