@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#itemForm").click(function(){
         $.ajax({
-            type: 'POST',
+            type: 'GET',
             data: {
                 'grant_type': 'client_credentials'
             },
