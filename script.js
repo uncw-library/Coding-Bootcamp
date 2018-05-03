@@ -1,14 +1,15 @@
 $(document).ready(function(){
     $("#itemForm").click(function(){
+        var barcode = $('#barcode').val();
         $.ajax({
-            url: "https://libcat.uncw.edu/iii/sierra-api/v5/token",
-            headers: {'Access-Control-Allow-Origin': '*'},
-            beforeSend: function (xhr) {
-                xhr.setRequestHeader ("Authorization", "Basic M21pQ0Y2aW1VQk1OcE95WXE3ekwvZ2M4YUcrTjpmcmVlemVyYXk=");
-            },
+            method: 'GET',
+            url: "https://item-lookup.libapps.uncw.edu/" + barcode,
             success: function(resultData) { 
-                $('#titleSpan').html(resultData.title);
+                $('#titleSpan').html(resultData);
                 console.log(JSON.stringify(resultData)); 
+            },
+            error: function(err){
+                console.log(JSON.stringify(err));
             }
         });
     });
