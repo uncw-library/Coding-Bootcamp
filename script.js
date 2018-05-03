@@ -13,8 +13,9 @@ $(document).ready(function(){
                     $('#callNumberSpan').html(resultData.item_record.callNumber);
                     $('#statusSpan').html(resultData.item_record.status.display);
                     $('#locationSpan').html(resultData.item_record.location.name);
+                } else {
+                    alert(resultData);
                 }
-                //$('#statusSpan').html(resultData.status.display);
             },
             error: function(err){
                 console.log(JSON.stringify(err));
